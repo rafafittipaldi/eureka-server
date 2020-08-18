@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://localhost:3306/catalogo?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        
+  application:
+    name: 'catalogo'
+    
+eureka:
+ client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defualtZone: http://localhost:8761/eureka
