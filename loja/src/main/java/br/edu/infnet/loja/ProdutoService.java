@@ -18,7 +18,7 @@ public class ProdutoService {
 	public List<ProdutoDTO> lista(){
 		
 		ResponseEntity<List<ProdutoDTO>> response =
-				restTemplate.exchange("http://localhost:8080/produtos",
+				restTemplate.exchange("http://catalogo/produtos",
 		                    HttpMethod.GET, null, new ParameterizedTypeReference<List<ProdutoDTO>>() {});
 		
 		return response.getBody();
