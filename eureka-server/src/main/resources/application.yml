@@ -2,5 +2,8 @@ eureka:
   client:
     fetch-registry: false
     register-with-eureka: false
+  instance:
+    appname: eureka
 server:
   port: 8761
+  
